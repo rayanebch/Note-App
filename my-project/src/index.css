@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-grid {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
